@@ -1,0 +1,56 @@
+<!-- templates/home.html -->
+{% extends 'layout.html' %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <h1>Hi, I'm Bulelani</h1>
+    <p class="lead">A passionate software developer specializing in mobile and web development.</p>
+</div>
+
+<section>
+    <h2 class="section-title">Skills</h2>
+    <ul class="list-group">
+        <li class="list-group-item">Flutter & Dart (Mobile/Web)</li>
+        <li class="list-group-item">Python & Django</li>
+        <li class="list-group-item">C# & .NET</li>
+        <li class="list-group-item">MySQL & Firebase</li>
+        <li class="list-group-item">HTML, CSS, JavaScript</li>
+    </ul>
+</section>
+
+<section>
+    <h2 class="section-title">Projects</h2>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Matric Prep App</h5>
+                    <p class="card-text">Helps Grade 12 students prepare for exams with categorized past papers and study tools.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Beauty Store</h5>
+                    <p class="card-text">A Flutter e-commerce site for selling iPhones and booking weave/makeup services.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Add more cards as needed -->
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Contact Me</h2>
+    <p>
+        <a href="mailto:bulelanimagwebu2@gmail.com" class="me-3">
+            <i class="fas fa-envelope fa-2x"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/bulelani-magwebu" target="_blank">
+            <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+    </p>
+</section>
+{% endblock %}

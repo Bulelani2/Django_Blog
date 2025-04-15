@@ -1,0 +1,27 @@
+<!-- templates/blog.html -->
+
+{% extends 'layout.html' %}
+{% load static %}
+{% block title %}Blog{% endblock %}
+
+{% block content %}
+<h1 class="section-title">Latest News-Based Blog Posts</h1>
+
+{% for post in posts %}
+<div class="card mb-4">
+    <div class="card-body">
+        {% if post.image_url %}
+            <img src="{{ post.image_url }}" alt="Post Image" style="width: 100%; object-fit: cover; border-radius: 8px;" />
+        {% else %}
+            <img src="{% static 'images/noun_Image_91722 (3).png' %}" alt="Fallback Image" style="width: 100%; object-fit: cover; border-radius: 8px;" />
+        {% endif %}
+        <h4 class="card-title">{{ post.title }}</h4>
+        <p class="card-text">{{ post.content|truncatewords:400 }}</p>
+        <a href="{{ post.source_url }}" class="btn btn-primary" target="_blank">Read More</a>
+        <p class="text-muted mt-2"><small>Published: {{ post.published_at|date:"M d, Y H:i" }}</small></p>
+    </div>
+</div>
+{% empty %}
+<p>No blog posts available at the moment.</p>
+{% endfor %}
+{% endblock %}
