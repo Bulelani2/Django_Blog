@@ -1,56 +1,56 @@
-<!-- templates/home.html -->
 {% extends 'layout.html' %}
 {% block title %}Home{% endblock %}
 
 {% block content %}
 <div class="hero">
-    <h1>Hi, I'm Bulelani</h1>
-    <p class="lead">A passionate software developer specializing in mobile and web development.</p>
+    <h1>Welcome to My Blog App</h1>
+    <p class="lead">Stay informed with real-time, AI-powered blog posts curated from reliable news sources across the web.</p>
 </div>
 
 <section>
-    <h2 class="section-title">Skills</h2>
-    <ul class="list-group">
-        <li class="list-group-item">Flutter & Dart (Mobile/Web)</li>
-        <li class="list-group-item">Python & Django</li>
-        <li class="list-group-item">C# & .NET</li>
-        <li class="list-group-item">MySQL & Firebase</li>
-        <li class="list-group-item">HTML, CSS, JavaScript</li>
+    <h2 class="section-title">About This App</h2>
+    <p>
+        This blog application fetches and displays the latest trending articles based on social engagement metrics. 
+        Whether you're a news enthusiast or just looking to stay updated, this platform brings top stories to your fingertips.
+    </p>
+</section>
+
+<section>
+    <h2 class="section-title">Key Features</h2>
+    <ul class="list-group mb-4">
+        <li class="list-group-item">🔥 Fetches real-time blog posts using social score algorithms</li>
+        <li class="list-group-item">🖼️ Includes images with consistent sizing and fallback support</li>
+        <li class="list-group-item">🔗 Direct source links for every article</li>
+        <li class="list-group-item">📅 Displays human-readable publish dates</li>
+        <li class="list-group-item">🚀 Responsive and clean user interface using Bootstrap</li>
     </ul>
 </section>
 
 <section>
-    <h2 class="section-title">Projects</h2>
+    <h2 class="section-title">Technologies Used</h2>
     <div class="row">
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Matric Prep App</h5>
-                    <p class="card-text">Helps Grade 12 students prepare for exams with categorized past papers and study tools.</p>
-                </div>
-            </div>
+        <div class="col-md-6">
+            <ul class="list-group">
+                <li class="list-group-item">Python & Django</li>
+                <li class="list-group-item">BeautifulSoup / News APIs</li>
+                <li class="list-group-item">SQLite / PostgreSQL</li>
+            </ul>
         </div>
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Beauty Store</h5>
-                    <p class="card-text">A Flutter e-commerce site for selling iPhones and booking weave/makeup services.</p>
-                </div>
-            </div>
+        <div class="col-md-6">
+            <ul class="list-group">
+                <li class="list-group-item">HTML5 & Bootstrap 5</li>
+                <li class="list-group-item">Font Awesome</li>
+                <li class="list-group-item">Template Inheritance (Django Templates)</li>
+            </ul>
         </div>
-        <!-- Add more cards as needed -->
     </div>
 </section>
 
 <section>
-    <h2 class="section-title">Contact Me</h2>
+    <h2 class="section-title">Explore the Blog</h2>
     <p>
-        <a href="mailto:bulelanimagwebu2@gmail.com" class="me-3">
-            <i class="fas fa-envelope fa-2x"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/bulelani-magwebu" target="_blank">
-            <i class="fab fa-linkedin fa-2x"></i>
-        </a>
+        Click below to explore the latest curated content.
     </p>
+    <a href="/blog" class="btn btn-primary btn-lg">Visit Blog</a>
 </section>
 {% endblock %}
